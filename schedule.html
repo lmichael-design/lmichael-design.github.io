@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Schedule</title>
+  <style>
+    table.schedule {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      border: 3px solid #333;
+    }
+
+    .schedule th {
+      background-color: #2c3e50;
+      color: white;
+      padding: 12px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+
+    .schedule td {
+      border: 1px solid #333;
+      padding: 10px;
+      color: #222;
+    }
+
+    .highlight-row {
+      background-color: #dff0d8;
+    }
+
+    .alt-row {
+      background-color: #f3f3f3;
+    }
+
+    .time-cell {
+      font-weight: bold;
+      width: 20%;
+      background-color: #eef5ff;
+    }
+
+    .event-cell {
+      width: 80%;
+    }
+
+    .morning {
+      color: #1e88e5;
+    }
+
+    .afternoon {
+      color: #fb8c00;
+    }
+
+    .evening {
+      color: #8e24aa;
+    }
+
+    .school {
+      background-color: #fff3cd;
+    }
+
+    .home {
+      background-color: #d1ecf1;
+    }
+
+    .food {
+      background-color: #f8d7da;
+    }
+
+    .workout {
+      background-color: #e2e3e5;
+    }
+  </style>
+</head>
+<body>
+  <table class="schedule">
+    <tr>
+      <th>Time</th>
+      <th>Activity</th>
+    </tr>
+    <tr class="highlight-row school">
+      <td class="time-cell morning">6:30 AM</td>
+      <td class="event-cell morning">Wake up and get ready</td>
+    </tr>
+    <tr class="alt-row food">
+      <td class="time-cell morning">7:00 AM</td>
+      <td class="event-cell morning">Breakfast</td>
+    </tr>
+    <tr class="school">
+      <td class="time-cell morning">8:00 AM</td>
+      <td class="event-cell morning">Go to school</td>
+    </tr>
+    <tr class="alt-row school">
+      <td class="time-cell morning">9:00 AM</td>
+      <td class="event-cell morning">English class</td>
+    </tr>
+    <tr class="school">
+      <td class="time-cell morning">10:00 AM</td>
+      <td class="event-cell morning">Math class</td>
+    </tr>
+    <tr class="alt-row school">
+      <td class="time-cell morning">11:00 AM</td>
+      <td class="event-cell morning">Science lab</td>
+    </tr>
+    <tr class="highlight-row food">
+      <td class="time-cell afternoon">12:00 PM</td>
+      <td class="event-cell afternoon">Lunch</td>
+    </tr>
+    <tr class="alt-row school">
+      <td class="time-cell afternoon">1:00 PM</td>
+      <td class="event-cell afternoon">History class</td>
+    </tr>
+    <tr class="school">
+      <td class="time-cell afternoon">2:00 PM</td>
+      <td class="event-cell afternoon">Computer class</td>
+    </tr>
+    <tr class="alt-row home">
+      <td class="time-cell afternoon">4:00 PM</td>
+      <td class="event-cell afternoon">Homework time</td>
+    </tr>
+    <tr class="workout">
+      <td class="time-cell evening">5:30 PM</td>
+      <td class="event-cell evening">Exercise / sports practice</td>
+    </tr>
+    <tr class="highlight-row food">
+      <td class="time-cell evening">7:00 PM</td>
+      <td class="event-cell evening">Dinner and relax</td>
+    </tr>
+    <tr class="alt-row home">
+      <td class="time-cell evening">8:00 PM</td>
+      <td class="event-cell evening">Shower and clean up</td>
+    </tr>
+    <tr class="home">
+      <td class="time-cell evening">9:00 PM</td>
+      <td class="event-cell evening">Read and go to bed</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+
+
