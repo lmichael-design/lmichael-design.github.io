@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background: #eef5f8;
+    color: #263238;
+}
+
+/* CSS Grid page layout */
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Styling for the three sections */
+.heading,
+.puzzle-section,
+.date-section {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+h1, h2 {
+    color: #286477;
+}
+
+/* Flexbox puzzle layout */
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Individual puzzle pieces */
+.puzzle img {
+    display: block;
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Hide the incorrect puzzle piece */
+.puzzle .wrong-piece {
+    display: none;
+}
+
+/* Date section */
+.date-section {
+    text-align: center;
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    body {
+        padding: 12px;
+    }
+
+    .heading,
+    .puzzle-section,
+    .date-section {
+        padding: 15px;
+    }
+}
