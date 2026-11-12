@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background: #d9d9d9;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+  background: #000;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Butterfly */
+.butterfly {
+  background: linear-gradient(135deg, #e7d9ad 0%, #b8c18b 45%, #8a9b63 100%);
+}
+.butterfly img {
+  object-fit: cover;
+  filter: blur(.2px) saturate(1.4) contrast(1.12) brightness(1.05) sepia(.18);
+  transform: scale(1.04);
+}
+
+/* Dinosaur */
+.dinosaur {
+  background: #000;
+}
+.dinosaur img {
+  object-fit: contain;
+  filter: drop-shadow(6px 6px 0 rgba(0,0,0,.25))
+          drop-shadow(-3px -3px 0 rgba(255,255,255,.05))
+          saturate(1.2)
+          brightness(1.02);
+}
+
+/* Football field */
+.football {
+  background: #567f22;
+}
+.football .field {
+  filter: contrast(1.08) saturate(1.25) brightness(.95) sepia(.15);
+}
+.football .tictac {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  opacity: .7;
+  filter: grayscale(1) contrast(1.4) brightness(1.1);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+/* Penguins */
+.penguins {
+  background: #111;
+}
+.penguins img {
+  object-fit: cover;
+  filter: blur(1.6px) saturate(1.25) contrast(1.1) brightness(.98) hue-rotate(-5deg);
+}
+
+/* Seagull */
+.seagull {
+  background: #dfe7ef;
+}
+.seagull img {
+  object-fit: cover;
+  filter: grayscale(.25) sepia(.12) contrast(1.12) brightness(1.04);
+}
+
+/* Theater stage */
+.stage {
+  background: radial-gradient(circle at center, #4a1f10 0%, #1d0b07 70%, #000 100%);
+}
+.stage img {
+  object-fit: cover;
+  filter: contrast(1.15) saturate(1.2) brightness(.92) drop-shadow(0 0 12px rgba(255,160,80,.15));
+}
+
+
+
